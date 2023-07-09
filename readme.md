@@ -16,13 +16,13 @@ Yêu cầu cài đặt docker để chạy code
 
 2. Pull code Colight từ git: `git clone https://github.com/NgKhTr/cs106_2Q2T.git`
 
-3. Tạo docker container từ docker image vừa được pull về và mount tới thư mục chứa code Colight: `docker run -it -v /path/to/your/workspace/colight/:/colight/ --shm-size=8gb --name colight hzw77/colight:v0.1 /bin/bash`
+3. Tạo docker container từ docker image vừa được pull về và mount tới thư mục chứa code Colight: `docker run -it -v /path/to/your/workspace/colight/:/colight/ --shm-size=8gb --name ngkhtrf/cs106:latest /bin/bash` (Lưu ý: ký hiệu phân cách trong path là `/`)
 
-4. Terminal đã được được liên kết với terminal của docker container, di chuyển vào thư mục colight: `cd colight`
+5. Terminal đã được được liên kết với terminal của docker container, di chuyển vào thư mục colight: `cd colight`
 
-5. Chạy thử nghiệm với Colight model, có thể thiết lập các đối số để chọn map, round train, ...: `python -O runexp.py`
+6. Chạy thử nghiệm với Colight model, có thể thiết lập các đối số để chọn map, round train, ...: `python -O runexp.py`
 
-6. Chạy thử nghiệm với Baseline model, có thể thiết lập các đối số để chọn map, baseline model, ...: `python -O run_baseline.py`
+7. Chạy thử nghiệm với Baseline model, có thể thiết lập các đối số để chọn map, baseline model, ...: `python -O run_baseline.py`
 
 Chạy giả lập
 
