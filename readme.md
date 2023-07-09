@@ -16,7 +16,9 @@ Yêu cầu cài đặt docker để chạy code
 
 2. Pull code Colight từ git: `git clone https://github.com/NgKhTr/cs106_2Q2T.git`
 
-3. Tạo docker container từ docker image vừa được pull về và mount tới thư mục chứa code Colight: `docker run -it -v /path/to/your/workspace/colight/:/colight/ --shm-size=8gb --name ngkhtrf/cs106:latest /bin/bash` (Lưu ý: ký hiệu phân cách trong path là `/`)
+3. Tạo docker container từ docker image vừa được pull về và mount tới thư mục chứa code Colight:
+`docker run -it -v /path/to/your/workspace/colight/:/colight/ --shm-size=8gb --name ngkhtrf/cs106:latest /bin/bash`
+(Lưu ý: ký hiệu phân cách trong path là `/`)
 
 5. Terminal đã được được liên kết với terminal của docker container, di chuyển vào thư mục colight: `cd colight`
 
